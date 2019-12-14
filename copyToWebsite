@@ -1,0 +1,8 @@
+#!/bin/bash
+
+GIT_FILES=/home/group4/group4/serverFiles/
+WEB_FILES=/var/www/html/
+
+echo "Running rsync"
+sudo rsync -rc $GIT_FILES/* $WEB_FILES
+

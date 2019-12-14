@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Menue</title>
+         <style type="text/css">
+        body{ font: 14px sans-serif; }
+        .wrapper{ 
+            max-width: 700px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 20px; 
+            padding-left: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <center>
+            <h1>Hello <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to your portal.</h1>
+            <p>Here is a list of things you might want to do!</p>
+        </center>
+
+        <input type="button" onclick="location.href='./adminProxy.php?file=register.php';" value="Register New Employees" /> 
+        <br>
+        <input type="button" onclick="location.href='../logout.php';" value="Log out of admin" />
+
+    </body>
+</html>
